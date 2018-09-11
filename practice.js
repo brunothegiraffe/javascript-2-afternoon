@@ -16,8 +16,11 @@
 
 //Code here
 
-
-
+let me = {
+  name: 'Cameron Bruun',
+  age: 27
+}
+me.name;
 ////////// PROBLEM 2 //////////
 
 /*
@@ -26,7 +29,14 @@
 */
 
 //Code here
-
+let favoriteThings = {
+  band: 'the strokes',
+  food: 'italian',
+  person: 'me',
+  book: 'the dresden files',
+  movie: 'the worlds end',
+  holiday: 'halloween'
+}
 
 
 /*
@@ -34,7 +44,8 @@
 */
 
 //Code here
-
+favoriteThings.car = 'samurai';
+favoriteThings.brand = 'amazon';
 
 
 /*
@@ -42,7 +53,8 @@
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 
 
 ////////// PROBLEM 3 //////////
@@ -56,15 +68,19 @@
 */
 
 //Code here
+let backPack = {
 
-
+}
+let item = 'firstPocket';
+backPack[item] = 'chapstick'
+backPack.color = 'black';
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
-
+alert(backPack);
 
 
 /*
@@ -75,6 +91,7 @@ Instead, console.log your whole backPack object and then check out the console.
 
 //Code here
 
+console.log(backPack);
 
 
 ////////// PROBLEM 4 //////////
@@ -97,7 +114,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in'
 
 
 
@@ -120,7 +138,9 @@ var user2 = {
 */
 
 //Code Here
+let methodCollection = {
 
+};
 
 
 /*
@@ -129,15 +149,21 @@ var user2 = {
 */
 
 //Code Here
-
-
+methodCollection.alertHello = () =>{
+  alert('hello');
+}
+methodCollection.logHello = () =>{
+  console.log('hello');
+  
+}
 
 /*
   Now call your alertHello and logHello methods.
 */
 
 //Code Here
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -148,7 +174,13 @@ var user2 = {
 */
 
 //Code Here
-
+let makePerson = (name, birthday, ssn) => {
+  return person = {
+    name: name,
+    birthday: birthday,
+    ssn: ssn
+  }
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -159,5 +191,12 @@ var user2 = {
 */
 
 //Code Here
-
+let makeCard = (cardNumber, expirationDate, securityCode) => {
+  let newCard = {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
+  return newCard;
+}
 
